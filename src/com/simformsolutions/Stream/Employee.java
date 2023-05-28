@@ -19,8 +19,10 @@ public class Employee implements Comparable<Employee>{
 
   double salary;
 
+  String number;
 
-  public Employee(int id, String name, int age, String gender, String department, int yearOfJoining, double salary) {
+
+  public Employee(int id, String name, int age, String gender, String department, int yearOfJoining, double salary , String number) {
     this.id = id;
     this.name = name;
     this.age = age;
@@ -28,6 +30,7 @@ public class Employee implements Comparable<Employee>{
     this.department = department;
     this.yearOfJoining = yearOfJoining;
     this.salary = salary;
+    this.number = number;
   }
 
 
@@ -88,6 +91,14 @@ public class Employee implements Comparable<Employee>{
     this.salary = salary;
   }
 
+  public String getNumber() {
+    return number;
+  }
+
+  public void setNumber(String number) {
+    this.number = number;
+  }
+
   @Override
   public String toString() {
     return "Employee{" +
@@ -98,6 +109,7 @@ public class Employee implements Comparable<Employee>{
             ", department='" + department + '\'' +
             ", yearOfJoining=" + yearOfJoining +
             ", salary=" + salary +
+        ", NUmber=" + number +
             '}';
   }
 
